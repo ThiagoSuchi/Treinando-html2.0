@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
-    outline: none;/* Retira a borda azul ao clicar no container.*/
+    outline: none;
+    /* Retira a borda azul ao clicar no container.*/
 }
 
 body {
@@ -11,11 +12,12 @@ body {
 }
 
 .container {
-   background: #d1d1dd; 
-   width: 500px;
-   border-radius: 10px;
-   padding: 20px;
-   margin: 100px auto 0;   
+    background: #d1d1dd;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+   
 }
 
 
@@ -24,27 +26,31 @@ body {
     border-radius: 5px;
     width: 300px;
     height: 40px;
-    padding-left: 10px; /* distância a string da borda, dentro do container*/
+    padding-left: 10px;
+    /* distância a string da borda, dentro do container*/
 }
 
 .button__add__task {
-   border: none;
-   border-radius: 5px;
-   height: 40px;
-   width: 95px;
-   background-color: #055646;
-   color: #ffffff;
-   font-size: 15px;
-   float: right;
-   cursor: pointer;/*cursor: pointer é uma propriedade CSS que define o cursor do mouse como um "ponteiro" sobre determinado elemento.*/
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 95px;
+    background-color: #055646;
+    color: #ffffff;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+    /*cursor: pointer é uma propriedade CSS que define o cursor do mouse como um "ponteiro" sobre determinado elemento.*/
 }
 
 
-.button__add__task:hover { /*:hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa.*/
+.button__add__task:hover {
+    /*:hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa.*/
     opacity: 0.8;
 }
 
-.button__add__task:active { /*:active define o estilo do link ativo (o que foi "clicado").*/
+.button__add__task:active {
+    /*:active define o estilo do link ativo (o que foi "clicado").*/
     opacity: 0.5;
 }
 
@@ -56,7 +62,8 @@ body {
 
 .task {
     background-color: #f2f2f2;
-    box-shadow: 1px 4px 10px rgb(0, 0, 0, 0.2); /* É utilizado para adicionar efeitos de sombra em volta de um elemento.*/
+    box-shadow: 1px 4px 10px rgb(0, 0, 0, 0.2);
+    /* É utilizado para adicionar efeitos de sombra em volta de um elemento.*/
     border-radius: 9px;
     display: flex;
     height: 50px;
@@ -79,10 +86,13 @@ img {
 }
 
 .done {
-    background-color:  #98b660;
+    background-color: #98b660;
     text-decoration: line-through;
 }
 
+@media screen and (max-width: 551px) {
 
-
-
+    .container {
+        width: 90%;
+    }
+}
